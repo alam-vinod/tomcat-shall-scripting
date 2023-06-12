@@ -13,4 +13,21 @@ mv apache-tomcat-9.0.76 tomcat
 cd tomcat/bin
 sh startup.sh
 cd /
-cp viji.war /vin/tomcat/webapps
+cp 'index.html?ddownload=14486' /vin/tomcat/webapps
+cp *.war /vin/tomcat/webapps
+# here am creating one directory
+mkdir ajaiy
+cd ajaiy
+touch vinod1 vinod2 vinod3.txt
+cp *.txt /opt/viki
+useradd vinod -p vinod
+a=$((10+3))
+b=$((10*3))
+echo $((a-b))
+
+echo "what do u want print"
+read aa
+echo $aa
+
+read -p "this is "  name
+echo " your name is "$name
