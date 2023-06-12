@@ -1,0 +1,16 @@
+#!/bin/bash
+mkdir vin
+cd vin
+touch v1 v2 v3 v4
+mkdir /opt/viki
+cd ..
+cd vin
+cp v2 v3 /opt/viki
+apt install openjdk-11-jre-headless -y
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.tar.gz
+tar -xvf apache-tomcat-9.0.76.tar.gz
+mv apache-tomcat-9.0.76 tomcat
+cd tomcat/bin
+sh startup.sh
+cd /
+cp viji.war /vin/tomcat/webapps
