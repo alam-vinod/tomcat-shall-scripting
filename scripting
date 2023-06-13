@@ -31,3 +31,7 @@ echo $aa
 
 read -p "this is "  name
 echo " your name is "$name
+
+*** shotcut**
+if we want to go first line of vi editor then  press ESC button then type "gg"
+and also you want delete all content line what ever having existing file  press "ESC" then type "dG" it will be all deleted
