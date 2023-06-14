@@ -70,6 +70,17 @@ i need values of as my reqirement
 
 echo $(vinod[@]:3:7}
 
+*********if and if-else statements*********
+#!/bin/bash
+read  -p 'enter any number ' a
+read -p 'enter second number' b
+if [ $a -gt $b ]
+then
+        echo $a is graterthan $b
+else
+        echo $b is grater than $a
+fi
+
 
 
 
