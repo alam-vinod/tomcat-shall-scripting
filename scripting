@@ -35,3 +35,46 @@ echo " your name is "$name
 *** shotcut**
 if we want to go first line of vi editor then  press ESC button then type "gg"
 and also you want delete all content line what ever having existing file  press "ESC" then type "dG" it will be all deleted
+
+
+****varible concept*****
+
+#!/bin/bash
+read -p 'enter any number ' a
+read -p 'enter second number ' b
+echo "your addition is $((a+b))"
+echo "your sybtaction is $((a-b))"
+echo "your multiplication is $((a*b))"
+
+***** array concept**
+
+here we can stored in values afer finally we can get what ever we want output
+
+systax s as show in below 
+
+array name is vinod
+index is [] = its like a option we want to print output by using index value
+
+
+vinod=[[1]=100 [2]=200 [3]=300)
+
+suppose i need all values as stored in array i can write like this 
+echo ${vinod[*]} or echo ${vinod[*]}
+
+i want start with 3 index 
+
+echo ${vinod[*]:3}
+
+i need values of as my reqirement 
+
+echo $(vinod[@]:3:7}
+
+
+
+
+
+
+
+
+
+
